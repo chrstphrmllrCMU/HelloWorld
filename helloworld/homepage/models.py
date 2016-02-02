@@ -1,0 +1,12 @@
+from __future__ import unicode_literals
+
+from django.db import models
+
+# Create your models here.
+class blog(models.Model):
+	title=models.CharField()
+	context=models.TextField()
+	after= models.DateTimeField()
+	
+	def __unicode__(self):
+		return self.title;
